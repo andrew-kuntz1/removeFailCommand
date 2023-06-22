@@ -15,13 +15,12 @@ token=$(/usr/bin/curl $url/uapi/auth/tokens -s -X POST -H "Authorization: Basic 
 
 echo $token
 
-DeviceID=$(/usr/bin/curl -ks -H "Accept: application/xml" -H "Authorization: Bearer $token" $url/JSSResource/mobiledevices -X GET | xmllint --format -| awk -F '[<>]' '/\<id\>/{print $3}')
-
 
 
 #######TEST TO MAKE SURE COMMAND WORKS#############
 /usr/bin/curl -ks -H "content-type: text/xml" -H "Authorization: Bearer $token" $url/JSSResource/commandflush/mobiledevices/id/$testID/status/Failed -X DELETE
 
+#DeviceID=$(/usr/bin/curl -ks -H "Accept: application/xml" -H "Authorization: Bearer $token" $url/JSSResource/mobiledevices -X GET | xmllint --format -| awk -F '[<>]' '/\<id\>/{print $3}')
 
 #for i in $DeviceID
 	
