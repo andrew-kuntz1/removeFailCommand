@@ -15,6 +15,11 @@ token=$(/usr/bin/curl $url/uapi/auth/tokens -s -X POST -H "Authorization: Basic 
 
 echo $token
 
+echo -e "\n-----------------------------------------------------------------------------------------------------------------------"
+
+now=$(date +"%c")
+
+echo "Date of run: $now"
 
 
 #######TEST TO MAKE SURE COMMAND WORKS#############
@@ -26,7 +31,7 @@ echo $token
 	
 #do
 		
-#		/bin/echo "Removing failed MDM commands on device id: $i"
+#		echo -e "\nRemoving failed MDM commands on device id: $i"
 		
 		
 #		/usr/bin/curl -ks -H "content-type: text/xml" -H "Authorization: Bearer $token" $url/JSSResource/commandflush/mobiledevices/id/$i/status/Failed -X DELETE
