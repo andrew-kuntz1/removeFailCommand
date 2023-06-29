@@ -10,13 +10,17 @@
       <string>-c</string>
       <string>/Users/Shared/mobileRemoveFailed.sh</string>
     </array>
+    <key>StandardOutPath</key>
+    <string>/var/log/failcommand.log</string>
+    <key>StandardErrorPath</key>
+    <string>/var/log/failcommand.log</string>
     <key>StartCalendarInterval</key>
     <array>
       <dict>
         <key>Hour</key>
         <integer>18</integer>
         <key>Minute</key>
-        <integer>0</integer>
+        <integer>30</integer>
       </dict>
     </array>
   </dict>
