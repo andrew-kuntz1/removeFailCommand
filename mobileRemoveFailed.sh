@@ -23,8 +23,12 @@ echo "Date of run: $now"
 
 
 #######TEST TO MAKE SURE COMMAND WORKS#############
+###Needs a mobile device ID with at least one failed command
 /usr/bin/curl -ks -H "content-type: text/xml" -H "Authorization: Bearer $token" $url/JSSResource/commandflush/mobiledevices/id/$testID/status/Failed -X DELETE
 
+
+
+######Uncomment these lines once the test command is confirmed as working
 #DeviceID=$(/usr/bin/curl -ks -H "Accept: application/xml" -H "Authorization: Bearer $token" $url/JSSResource/mobiledevices -X GET | xmllint --format -| awk -F '[<>]' '/\<id\>/{print $3}')
 
 #for i in $DeviceID
