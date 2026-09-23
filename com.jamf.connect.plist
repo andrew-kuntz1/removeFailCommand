@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AllowNetworkSelection</key>
+	<true/>
+	<key>BackgroundImage</key>
+	<string>/usr/local/jamfconnect/background.jpg</string>
+	<key>ChangePasswordURL</key>
+	<string>https://account.activedirectory.windowsazure.com/ChangePassword.aspx</string>
+	<key>CreateJamfConnectPassword</key>
+	<true/>
+	<key>CreateNewUserHide</key>
+	<true/>
+	<key>DenyLocal</key>
+	<false/>
+	<key>DenyLocalExcluded</key>
+	<array>
+		<string>procurator</string>
+		<string>bocjamfmanage</string>
+	</array>
+	<key>EnableFDE</key>
+	<false/>
+	<key>LocalFallback</key>
+	<true/>
+	<key>Migrate</key>
+	<true/>
+	<key>MigrateUsersHide</key>
+	<array>
+		<string>procurator</string>
+		<string>bocjamfmanage</string>
+	</array>
+	<key>OIDCAdmin</key>
+	<array>
+		<string>Administrators</string>
+	</array>
+	<key>OIDCAdminAttribute</key>
+	<string>roles</string>
+	<key>OIDCClientID</key>
+	<string>5a046c8b-5f58-4b45-b95e-a992b496db3d</string>
+	<key>OIDCNewPassword</key>
+	<true/>
+	<key>OIDCProvider</key>
+	<string>EntraID</string>
+	<key>OIDCROPGID</key>
+	<string>5a046c8b-5f58-4b45-b95e-a992b496db3d</string>
+	<key>OIDCRedirectURI</key>
+	<string>https://127.0.0.1/jamfconnect</string>
+	<key>OIDCScopes</key>
+	<string>api://e3521f9e-64ff-48ac-a676-3b38d7885a2f/jamfconnect+openid+email+profile</string>
+	<key>OIDCTenant</key>
+	<string>402f130c-531f-44e6-822e-bc895b060a28</string>
+	<key>OIDCUsePassthroughAuth</key>
+	<true/>
+</dict>
+</plist>
